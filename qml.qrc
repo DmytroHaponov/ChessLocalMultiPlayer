@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ChessBoard.qml</file>
+        <file>Chessman.qml</file>
+        <file>DropPiece.qml</file>
+        <file>DragPiece.qml</file>
+        <file>Pawn.qml</file>
+        <file>Knight.qml</file>
+        <file>King.qml</file>
+        <file>Elephant.qml</file>
+        <file>Castle.qml</file>
+        <file>Queen.qml</file>
+        <file>Screen2.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>wKing.png</file>
+        <file>bCastle.png</file>
+        <file>bElephant.png</file>
+        <file>bKing.png</file>
+        <file>bKnight.png</file>
+        <file>bPawn.png</file>
+        <file>bQueen.png</file>
+        <file>wCastle.png</file>
+        <file>wElephant.png</file>
+        <file>wPawn.png</file>
+        <file>wQueen.png</file>
+        <file>wKnight.png</file>
+    </qresource>
+</RCC>
