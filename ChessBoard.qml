@@ -18,9 +18,9 @@ Grid
     Component.onCompleted:
     {
         for(var i=0; i<64; ++i)
-                        {
-                            if(i<16 || i>47)  chessBoard.busyMap[i] = true;
-                            else chessBoard.busyMap[i] = false;
-                        }
+        {
+            if(i<16 || i>47)  chessBoard.busyMap[i] = true;
+            else chessBoard.busyMap[i] = false;
+        }
     }
 }
