@@ -45,25 +45,13 @@ Item
                 }
             }
         }
-       // Rectangle
-        //{
-            //id: tile
-           // opacity: 0.1
-            Image
-            {
-                id:tile
-               // id: currentIm
-               // anchors.verticalCenter: parent.verticalCenter
-                //anchors.horizontalCenter: parent.horizontalCenter
-                //width: parent.width*0.8
-                //height: parent.height*0.8
-                //anchors.fill: parent
-                source:  path
-         //   }
+        Image
+        {
+            id:tile
+            source:  path
             width: 75; height: 75
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
-            Drag.keys: [ side, sideturn ]
             Drag.active: mouseArea.drag.active
             Drag.hotSpot.x: 32
             Drag.hotSpot.y: 32
@@ -74,14 +62,14 @@ Item
             ParentChange { target: tile; parent: root }
             AnchorChanges { target: tile; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
             }
-}
-       // }
+        }
     }
+
     DropArea
     {
         id: testDrop
         anchors.fill: parent
-        keys: [ ]
+
         property string side
         property string display
         property int countChange:0
@@ -122,16 +110,16 @@ Item
             opacity: 0.1
             states:
                 [
-                State
-                {
-                    when: testDrop.containsDrag
-                    PropertyChanges
+                    State
                     {
-                        target: rectDr
-                        color: "red"
+                        when: testDrop.containsDrag
+                        PropertyChanges
+                        {
+                            target: rectDr
+                            color: "red"
+                        }
                     }
-                }
-            ]
+                ]
         }
     }
 }
