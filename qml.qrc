@@ -12,6 +12,7 @@
         <file>Castle.qml</file>
         <file>Queen.qml</file>
         <file>Screen2.qml</file>
+        <file>Screen3.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file>wKing.png</file>

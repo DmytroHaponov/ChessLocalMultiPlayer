@@ -109,8 +109,8 @@ Item
         onClicked:
         {
             chessManLoader.source = "Screen3.qml"
-            start.visible = false
-            load.visible = false
+           // start.visible = false
+            //load.visible = false
         }
         Rectangle
         {
